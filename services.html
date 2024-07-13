@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <marquee behavior="" direction="left">Welcome to Service Hub - Your trusted service provider ! Offering reliable
+          solutions for all your service needs. 50% OFF on your First Service / <a href="#services"
+            style="text-decoration: none; color: blue !important;">Our Services</a> / Join Us if you are looking for Job /
+          <a href="career.html" style="text-decoration: none; color: blue !important;">Careers</a> / The purpose of a free
+          consultation is to provide a potential client with information regarding the services that we provide. / <a
+            href="#contact" style="text-decoration: none; color: blue !important;">Free Consultation</a> /
+        </marquee>
+    
+        <div class="sub-header">
+          <div class="contact-info">
+            <p id="info-head">| <span style="color: rgb(47, 47, 204);">info@serviceshub.com</span></p>
+            <!-- <p>Phone: +123 456 7890</p> -->
+          </div>
+          <div class="social-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="header">
+          <a href="index.html" style="text-decoration: none; color: black; font-weight: bolder; font-style: italic;">
+            <div class="logo" style="color: white !important;"><img src="./brand4.png" alt="" style="height: 50px; width: 120px; margin: 0%; padding: 0%; " ></div>
+          </a>
+          <nav>
+            <a id="anchor" href="#home">Home</a>
+            <a id="anchor" href="#gallery">Gallery</a>
+            <a id="anchor" href="#services">Services</a>
+            <a id="anchor" href="#about">About</a>
+            <a id="anchor" href="#contact">Contact</a>
+            <a id="anchor" href="career.html">Careers</a>
+            <a id="anchor" href="dashboard.html">Dashboard</a>
+          </nav>
+          <div class="icons">
+            <a href="##" onclick="showCart()"><i class="fa fa-shopping-cart"></i></a>
+            <span class="cart-count">0</span>
+            <a href="login.html"><i class="fa fa-user"></i></a>
+          </div>
+          <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+        </div>
+    
+        <div id="addToCartModal" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal('addToCartModal')">&times;</span>
+            <p>Item added to cart!</p>
+          </div>
+        </div>
+    
+        <div id="cartModal" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal('cartModal')">&times;</span>
+            <h2>Cart Items</h2>
+            <ul id="cartItems" class="cart-items"></ul>
+          </div>
+        </div>
+    
+    
+      </header>
+    
+<!-- Product Section -->
+   <section id="services" class="products">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="product-list">
+      </div>
+      <div class="btn-container">
+        <button id="viewMoreBtn" class="btn">View More</button>
+        <button id="viewLessBtn" class="btn" style="display: none;">View Less</button>
+      </div>
+    </div>
+
+  </section>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <!-- gsap link -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+  <script src="main.js"></script>
+</body>
+</html>
